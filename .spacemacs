@@ -35,7 +35,8 @@ values."
      emacs-lisp
      git
      github
-     markdown
+     (markdown :variables
+               markdown-live-preview-engine 'vmd)
      org
      (shell :variables
             shell-default-height 30
@@ -58,6 +59,7 @@ values."
      (latex :variables
             latex-enable-auto-fill t
             latex-enable-folding t)
+     bibtex
      unimpaired
      )
    ;; List of additional packages that will be installed without being
