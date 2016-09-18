@@ -269,6 +269,9 @@ before packages are loaded. If you are unsure, you should try in setting them in
   (push "/usr/local/share/emacs/site-lisp/rtags" load-path);; rtags load path
   (setq-default evil-escape-unordered-key-sequence t)
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
+  ;;Set the real exuberant-ctags/universal-ctags executable.
+  ;;Because in some OS (like CentOS) the exuberant-ctags have other name than the default ctags.
+  ;;In OS X though, this line should be commented, as it uses the default ctags as executable name.
   (setq projectile-tags-command "etags.ctags -Re -f \"%s\" %s")
   )
 
