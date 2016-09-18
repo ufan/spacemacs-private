@@ -44,7 +44,7 @@ values."
      spell-checking
      syntax-checking
      version-control
-     spacemacs-cmake-ide ;; cmake-ide
+     cmake-ide ;; cmake-ide
      (c-c++ :variables
             c-c++-default-mode-for-headers 'c++-mode
             c-c++-enable-clang-support t
