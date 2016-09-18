@@ -11,8 +11,10 @@
 
 ;; variables
 
-(defvar spacemacs-cmake-ide-enable-irony t
+(defvar cmake-ide-enable-irony t
   "If non nil , irony-mode/company-irony/company-irony-c-headers/flycheck-irony will be used")
 
-(defvar spacemacs-cmake-ide-enable-rtags t
+(defvar cmake-ide-enable-rtags t
   "If non nil, the company-rtags/flycheck-rtags will be used")
+
+(defvar cmake-ide-rtags-install-dir  "/usr/local/share/emacs/site-lisp/rtags")
